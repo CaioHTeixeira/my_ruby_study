@@ -1,14 +1,3 @@
-puts "hello world" #imprime e quebra linha
-
-#function
-def sum(a, b) 
-    a + b  #return é opcional para um valor.
-end
-
-soma = sum(3,2)
-
-print("A soma dos valores é: ", soma) #não quebra linha
-
 #Creating arrays
 array = [1, "caio", nil, 1.2, true]
 array2 = Array.new #=>[]
@@ -92,8 +81,3 @@ arr.each {|a| print a -= 10, " "}
 #=> [1, 2, 3, 4, 5]
 
 arr.map {|a| 2*a}     #=> [2, 4, 6, 8, 10]
-
-#String interpolation
-print ("#{array.first}, #{array.last} ")
-print ("primeiro " + "#{array.first}" + 
-    "segundo" + "#{array.last}")
