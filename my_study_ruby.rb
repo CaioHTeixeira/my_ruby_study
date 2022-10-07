@@ -38,6 +38,48 @@ arr.pop #=> 7
 arr.delete_at(2) #=> 2 remove valor do index 2
 arr.delete(3) #=> 3 remove um elemento.
 
+#Non-destructive Selection(array inicial é mantido)
+arr = [1,2,3,4,5,6]
+arr.select {|a| a > 3}       #=> [4, 5, 6]
+arr.reject {|a| a < 3}       #=> [3, 4, 5, 6]
+arr.drop_while {|a| a < 4}   #=> [4, 5, 6]
+
+#Destructive Selection
+arr.delete_if {|a| a < 4}   #=> [4, 5, 6]
+arr.keep_if {|a| a < 4}   #=> [1, 2, 3]
+
+#index of array
+Array.new(3) {|index| index ** 2}
+# => [0, 1, 4]
+
+#algumas pegadinhas
+a = Array.new(2, Hash.new) # => [{}, {}]
+
+a[0]['cat'] = 'feline'
+a # => [{"cat"=>"feline"}, {"cat"=>"feline"}]
+
+a[1]['cat'] = 'Felix'
+a # => [{"cat"=>"Felix"}, {"cat"=>"Felix"}]
+
+a = Array.new(2) {Hash.new} # => [{}, {}]
+a[0]['cat'] = 'feline'
+a # => [{"cat"=>"feline"}, {}]
+
+Array.try_convert([1])   #=> [1]
+Array.try_convert("1")   #=> nil
+String.try_convert("arg") #=> "arg"
+
+[1, 1, 3, 5] & [3, 2, 1]  #=> [1, 3]
+
+# ary * int → new_array 
+[1, 2, 3] * 3    #=> [1, 2, 3, 1, 2, 3, 1, 2, 3]
+# ary * str → new_string 
+[1, 2, 3] * ","  #=> "1,2,3"
+#ary + other_ary → new_ary
+[1, 2, 3] + [4, 5]    #=> [1, 2, 3, 4, 5]
+#ary - other_ary → new_ary
+[1, 1, 2, 2, 3, 3, 4, 5] - [1, 2, 4]  #=>  [3, 3, 5]
+
 #matrix
 empty_table = Array.new(3) { Array.new(3) } 
 #=> [[nil, nil, nil], [nil, nil, nil], [nil, nil, nil]]
