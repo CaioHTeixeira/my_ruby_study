@@ -6,6 +6,7 @@ array4 = Array.new(3, true) #=> [true, true, true]
 array5 = Array.new(4) {Hash.new} #=>[{},{},{},{}]
 array6 = Array.new(4) {|i| i.to_s} #=>[{"0"},{"1"},{"2"},{"3"}]
 puts array.length #parenteses são opcionais para chamada
+puts array.empty?
 puts array6
 
 arrayMethod = Array({:a => "a", :b => "b"})
@@ -20,7 +21,7 @@ puts arr.drop(3) #=> [4, 5, 6] return n elements after 3 elements
 #have been dropped
 puts arr.empty? #=> false
 puts arr.include?('oi') #=> false
-arr.push(7) #=> [1, 2, 3, 4, 5, 6, 7] ou arr << 7
+arr.push(7) #=> [1, 2, 3, 4, 5, 6, 7] ou arr << 7 ou arr.append(7)
 arr.unshift(0) #=> [0, 1, 2, 3, 4, 5, 6, 7] add on begin
 arr.insert(3, 'apple')  #=> [0, 1, 2, 'apple', 3, 4, 5, 6, 7]
 arr.pop #=> 7
