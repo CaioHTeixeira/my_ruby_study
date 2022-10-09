@@ -54,3 +54,16 @@ puts mensagem.gsub("nome", "caio") #=> "ola caio" troca
 nomes = "caio lucas alexandre"
 p nomes.split() #pode colocar um outro delimitador ex: "-"
 p nomes
+
+#numbers
+#Integer, Float
+p 42.class
+p 42.42.class
+
+#soma int + float
+soma = 5 + 3.2 #Float
+
+#even or odd
+number = 3
+p number.even?
+p number.odd?
