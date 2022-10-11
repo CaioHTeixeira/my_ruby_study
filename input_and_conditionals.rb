@@ -61,3 +61,16 @@ else
 end
 
 #apenas nil e false são falsos.
+#Atribuição condicional de variavel
+variavel = nil
+variavel = "Algum valor" if variavel.nil? #só seta se variavel estiver vazia.
+
+#outra forma
+variavel = "Algum valor" if !variavel #só seta se variavel estiver vazia.
+
+#outra forma
+variavel = "Algum valor" unless variavel #só seta se variavel estiver vazia.
+
+#forma trivial
+#outra forma
+variavel ||= "Algum valor" #só seta se variavel estiver vazia.
