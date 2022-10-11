@@ -37,7 +37,7 @@ p nome.upcase #=> "     CAIO     " (imutável, vai gerar um
 #downcase
 p nome.downcase #=> "      caio    "
 
-#ação com !
+#ação com !(bang)
 p nome.upcase! #=> "     CAIO     " (mutável, substitui o 
 #valor da variável nome já existente)
 
