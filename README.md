@@ -1,2 +1,2 @@
-# my_ruby_study
-Estudo da linguagem Ruby e da estrutura de dados a respeito da linguagem.
+# my_study_plan
+My study plan about new languages and technologies that I want to study and practice.
