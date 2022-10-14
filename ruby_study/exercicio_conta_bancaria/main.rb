@@ -19,7 +19,6 @@ class Main
     # conta_poupanca.depositar(250)
     # conta_poupanca.transferir(conta_corrente, 100)
 
-    # p conta_corrente.saldo
     p conta_poupanca.saldo
     p conta_com_taxa.saldo
 end
