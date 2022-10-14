@@ -15,7 +15,7 @@ class Conta
             debitar(valor) 
             depositar(outra_conta, valor)
         else
-            puts "Saldo Insuficiente"
+            raise "Saldo Insuficiente" #raise lança exceção.
         end
     end
 

@@ -10,7 +10,12 @@ class Main
     conta_com_taxa = ContaComTaxa.new("Alexandre", 44444444)
 
     conta_com_taxa.depositar(conta_com_taxa, 250)
-    conta_com_taxa.transferir(conta_poupanca, 100)
+
+    begin
+        conta_com_taxa.transferir(conta_poupanca, 300) 
+    rescue StandardError => meu_erro  #se falhar
+        p "Não foi possível transferir: #{meu_erro.message}."
+    end
     # conta_poupanca.depositar(250)
     # conta_poupanca.transferir(conta_corrente, 100)
 
