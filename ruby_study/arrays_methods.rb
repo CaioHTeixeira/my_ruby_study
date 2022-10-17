@@ -5,6 +5,7 @@ array3 = Array.new(3) #=> [nil, nil, nil]
 array4 = Array.new(3, true) #=> [true, true, true]
 array5 = Array.new(4) {Hash.new} #=>[{},{},{},{}]
 array6 = Array.new(4) {|i| i.to_s} #=>[{"0"},{"1"},{"2"},{"3"}]
+
 puts array.length #parenteses são opcionais para chamada
 puts array.empty?
 puts array6
