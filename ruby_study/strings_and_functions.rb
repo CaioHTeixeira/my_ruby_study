@@ -275,3 +275,21 @@ string.slice!(3..6)     #=> " is "
 #to_f → float
 '3.14159'.to_f  # => 3.14159
 '1.234e-2'.to_f # => 0.01234
+
+#to_i(base = 10) → integer
+'12.345'.to_i   # => 12
+'123def'.to_i(16) # => 1195503 , base 16
+
+#to_r → rational
+'  2  '.to_r       #=> (2/1)
+'300/2'.to_r       #=> (150/1)
+
+#to_s → self or string
+4.to_s
+
+#tr(from_str, to_str) => new_str
+"hello".tr('el', 'ip')      #=> "hippo"
+"hello".tr('aeiou', '*')    #=> "h*ll*"
+
+#upto(other_string, exclusive = false) {|string| ... } → self
+'a8'.upto('b6') {|s| print s, ' ' }#=> a8 a9 b0 b1 b2 b3 b4 b5 b6 "a8"
