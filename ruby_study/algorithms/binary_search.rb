@@ -1,16 +1,28 @@
-arr = [10, 20, 80, 30, 60, 50,110, 100, 130, 170]
+class BinarySearch
 
-def binary_search(arr, value)
-    index_partitioned = (arr.length-1) / 2
+    def binary_search(array, left, right, value)
+        if right >= left
+            mid = left + (right - left).div(2);
+            p mid
+            mid if value === array[mid]
+                
+            if value > array[mid]
+                p array[mid]
+                binary_search(array, mid+1, right, value)
+            end
+            
+            binary_search(array, left, mid-1, value)
+        end
 
-    arr.find_index(value) if value === arr[index_partitioned]
-        
-    if value > arr[index_partitioned]
-        index_initial = index_partitioned + 1
-    else value < arr[index_partitioned]
-        index_final =index_partitioned - 1
+        return -1
     end
-
 end
 
-binary_search(arr, 110)
+class Main
+    arr = [10, 20, 30, 50, 60, 80, 110, 130, 140, 170]
+    array_length = arr.length
+    value = 110
+
+    binary_search = BinarySearch.new
+    p binary_search.binary_search(arr, 0, array_length - 1, value)
+end
