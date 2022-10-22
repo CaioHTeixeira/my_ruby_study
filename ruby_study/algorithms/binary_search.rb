@@ -21,7 +21,7 @@ end
 class Main
     arr = [10, 20, 30, 50, 60, 80, 110, 130, 140, 170]
     array_length = arr.length
-    value = 130
+    value = 110
 
     binary_search = BinarySearch.new
     p binary_search.binary_search(arr, 0, array_length - 1, value)
