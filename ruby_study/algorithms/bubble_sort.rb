@@ -24,8 +24,8 @@ end
 class Main
     arr = [5, 1, 4, 2, 8]
     
-    bubbleSort = BubbleSort.new
-    sorted_array = bubbleSort.bubble_sort arr
+    bubble_sort = BubbleSort.new
+    sorted_array = bubble_sort.bubble_sort arr
     
     puts "Sorted array: #{sorted_array}"
 end
