@@ -3,6 +3,10 @@ class MinimumProduct
         negative_itens = []
         minimum_product = 1
 
+        if arr.length === 1
+            return arr[0]
+        end
+
         for item in arr
             if item < 0
                 negative_itens.push item
