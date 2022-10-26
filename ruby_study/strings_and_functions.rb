@@ -174,6 +174,11 @@ p number #=> "9"
 #   "o\nworl"
 #   "d"
 
+#each_char.with_index
+"text".each_char.with_index do |letter, index|
+    p letter, index
+end
+
 #empty? → true or false
 "hello".empty? # => false
 
