@@ -8,24 +8,12 @@ class Count
         input_array = input.chomp.split('')
         
         input_array.each do |item|
-            if ("a".."z").to_a.include? item
-                ("a".."z").each do |lowercase|
-                    if lowercase === item
-                        lowercase_amount += 1
-                    end
-                end
+            if ("a".."z").to_a.include? item                
+                lowercase_amount += 1
             elsif ("A".."Z").to_a.include? item 
-                ("A".."Z").each do |uppercase|
-                    if uppercase === item
-                        uppercase_amount += 1
-                    end
-                end
+                uppercase_amount += 1
             elsif ("0".."9").to_a.include? item 
-                ("0".."9").each do |numeric|
-                    if numeric == item
-                        numeric_values_amount += 1
-                    end
-                end
+                numeric_values_amount += 1
             else
                 special_characters_amount += 1
             end            
