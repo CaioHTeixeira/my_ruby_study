@@ -23,7 +23,7 @@ class Main
     calculate_age = CalculateAge.new
     output = calculate_age.calculate_age birth_date, present_date
 
-    p "Output: years: #{output[:year]}."
-    p "Output: months: #{output[:month]}."
-    p "Output: days: #{output[:day]}."
+    p "years: #{output[:year]}."
+    p "months: #{output[:month]}."
+    p "days: #{output[:day]}."
 end
