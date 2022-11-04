@@ -1,5 +1,5 @@
 #A = Algorithm 
-module AArray
+module Aarray
 
     class MaximizeArray
         def maximize_array arr, k

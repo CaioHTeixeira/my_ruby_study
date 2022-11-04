@@ -1,3 +1,5 @@
 example_id                         | status | run_time        |
 ---------------------------------- | ------ | --------------- |
 ./spec/algorithms_gem_spec.rb[1:1] | passed | 0.00052 seconds |
+./spec/array/find_maximum.rb[1:1]  | passed | 0.00506 seconds |
+./spec/array/find_three.rb[1:1]    | passed | 0.00041 seconds |

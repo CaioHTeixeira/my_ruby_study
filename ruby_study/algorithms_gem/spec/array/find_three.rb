@@ -1,36 +1,11 @@
-#A = Algorithm 
-module AArray 
+require './lib/array/find_three'
 
-    class FindThree
-    def find_three arr
-        three_max = []
-        third = first = second = -999
+RSpec.describe Aarray::FindThree do
+    it "found three max elements!" do
+        arr = [4,6,2,9,13,15,7,14]
 
-        arr.each do |item| 
-            if item > first
-                third = second
-                second = first
-                first = item
-            elsif item > second
-                third = second
-                second = item
-            elsif item > third
-                third = item
-            end   
-        end
+        three_max = Aarray::FindThree.new.find_three arr
 
-        three_max.push first, second, third
-        
-        return three_max
-    end
-end
-
-    class Main
-        arr = [10, 4, 3, 50, 23, 90]
-
-        find_three = FindThree.new
-        output = find_three.find_three arr
-
-        p "Output: #{output}."
+        expect(three_max).to eql([15,14,13])
     end
 end

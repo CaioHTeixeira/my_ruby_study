@@ -1,5 +1,5 @@
 #A = Algorithm 
-module AArray
+module Aarray
     class FindMaximum
         def find_maximum stack1, stack2, stack3
             sum1 = stack1.sum

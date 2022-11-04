@@ -1,5 +1,5 @@
 #A = Algorithm 
-module AArray 
+module Aarray 
 
     class FindThree
         def find_three arr
@@ -21,7 +21,7 @@ module AArray
 
             three_max.push first, second, third
             
-            return three_max
+            return three_max.sort.reverse
         end
     end
 end
