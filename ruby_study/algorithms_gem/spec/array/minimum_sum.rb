@@ -1,16 +1,11 @@
-class MinimumSum
-    def minimum_sum arr
-        min_value = arr.min
+require './lib/array/minimum_sum'
 
-        return min_value * (arr.length - 1)
+RSpec.describe Aarray::MinimumSum do
+    it "Minimum sum!" do
+        arr = [1,2,3,4,5]
+
+        minimum_sum = Aarray::MinimumSum.new.minimum_sum arr
+
+        expect(minimum_sum).to eq 4
     end
-end
-
-class Main
-    arr = [2, 4, 1, 3]
-
-    minimum_sum = MinimumSum.new
-    output_minimum_sum = minimum_sum.minimum_sum arr
-
-    p "Output: #{output_minimum_sum}."
 end
