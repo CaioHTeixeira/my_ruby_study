@@ -1,29 +1,22 @@
+require './lib/date/calculate_age'
 require 'date'
 
-class CalculateAge
-    def calculate_age birth_date, present_date
-        age = Hash.new 
-
-        year = present_date.year - Date.strptime(birth_date, '%d-%m-%Y').year
-        month = present_date.month - Date.strptime(birth_date, '%d-%m-%Y').month
-        day = present_date.day - Date.strptime(birth_date, '%d-%m-%Y').day
-        
-        age[:year] = year
-        age[:month] = month
-        age[:day] = day
-
-        return age
-    end
-end
-
-class Main 
-    birth_date = "07-09-1996"
+RSpec.describe Pdate::CalculateAge do
+    birth_date = "28-01-1996"
     present_date = Date.today
 
-    calculate_age = CalculateAge.new
-    output = calculate_age.calculate_age birth_date, present_date
+    calculate_age = Pdate::CalculateAge.new
+        .calculate_age birth_date, present_date
 
-    p "years: #{output[:year]}."
-    p "months: #{output[:month]}."
-    p "days: #{output[:day]}."
+    it "year is correct" do
+        expect(calculate_age[:year]).to eql 26        
+    end
+
+    it "month is correct" do
+        expect(calculate_age[:month]).to eql 9
+    end
+
+    it "day is correct" do
+        expect(calculate_age[:day]).to eql 7
+    end
 end
