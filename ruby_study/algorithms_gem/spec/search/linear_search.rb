@@ -1,16 +1,21 @@
-arr = [10, 20, 80, 30, 60, 50,110, 100, 130, 170]
+require './lib/search/linear_search'
 
-def linear_search(arr, value)
-    found_item = false
-    
-    arr.each do |item|
-        if item === value
-            found_item = true
-            return arr.find_index(item)
-        end
+RSpec.describe Asearch::LinearSearch do
+    arr = [10, 20, 80, 30, 60, 50,110, 100, 130, 170]
+
+    it "item found" do
+        value = 60
+        linear_search = Asearch::LinearSearch.new
+            .linear_search arr, value
+
+        expect(linear_search).to eql 4
     end
-    
-    -1 if !found_item
-end
 
-p linear_search(arr, 110)
+    it "item not found" do
+        value = 55
+        linear_search = Asearch::LinearSearch.new
+            .linear_search arr, value
+        
+        expect(linear_search).to eql -1
+    end
+end

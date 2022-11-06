@@ -6,7 +6,6 @@ RSpec.describe Asearch::BinarySearch do
     
     it "item found" do
         value = 110
-    
         binary_search = Asearch::BinarySearch.new
             .binary_search arr, 0, array_length - 1, value
         
