@@ -17,6 +17,6 @@ RSpec.describe Pdate::CalculateAge do
     end
 
     it "day is correct" do
-        expect(calculate_age[:day]).to eql 7
+        expect(calculate_age[:day]).to eql 8
     end
 end

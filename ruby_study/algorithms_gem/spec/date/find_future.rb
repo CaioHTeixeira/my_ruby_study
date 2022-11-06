@@ -1,40 +1,17 @@
-require 'date'
+require './lib/date/find_future'
 
-class FindFuture
-    def find_future arr, query
-        dates_after = []
-        result = []
+RSpec.describe Pdate::FindFuture do
+    arr = [Date.new(1233,4,22), Date.new(633,3,1), Date.new(56645,5,23), 
+        Date.new(233,12,4)]
+    query = [Date.new(4345,3,23), Date.new(444345,3,23)]
 
-        arr.sort!
-        query.each do |query_item|
-            arr.each_with_index do |array_item, index|
-                if array_item > query_item
-                    dates_after << array_item
-                end
-            end
-                
-            result << dates_after[0] if dates_after[0] != nil
-            dates_after = []
-        end        
+    find_future = Pdate::FindFuture.new.find_future arr, query
 
-        result << -1 if result == [] || result == nil
-          
-        return result
+    it "The closest date after 4345-03-23 is 56645-05-23}." do
+        expect(find_future[0]).to eql Date.new 56645,05,23
     end
-end
 
-class Main
-    arr = [Date.new(1233,4,22), Date.new(633,3,1), Date.new(56645,5,23), Date.new(233,12,4)]
-    query = [Date.new(434599,3,23)]
-
-    find_future = FindFuture.new
-    output = find_future.find_future arr, query
-
-    if output[0] != -1 && output[0] != nil
-        query.each_with_index do |item, index|
-            p "The closest date after #{item} is #{output[index]}."
-        end
-    else 
-        p -1
+    it "The closest date after 444345-03-23 is -1}." do
+        expect(find_future[1]).to eql -1
     end
 end

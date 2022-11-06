@@ -17,10 +17,11 @@ module Pdate
                 end
                     
                 result << dates_after[0] if dates_after[0] != nil
+                result << -1 if result == [] || result == nil || 
+                    dates_after == []
+                
                 dates_after = []
             end        
-
-            result << -1 if result == [] || result == nil
             
             return result
         end
