@@ -5,6 +5,7 @@ RSpec.describe Asearch::LinearSearch do
 
     it "item found" do
         value = 60
+
         linear_search = Asearch::LinearSearch.new
             .linear_search arr, value
 
@@ -13,6 +14,7 @@ RSpec.describe Asearch::LinearSearch do
 
     it "item not found" do
         value = 55
+
         linear_search = Asearch::LinearSearch.new
             .linear_search arr, value
         

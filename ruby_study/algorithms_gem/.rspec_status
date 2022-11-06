@@ -14,5 +14,7 @@ example_id                           | status | run_time        |
 ./spec/date/find_future.rb[1:2]      | passed | 0.00007 seconds |
 ./spec/search/binary_search.rb[1:1]  | failed | 0.0408 seconds  |
 ./spec/search/binary_search.rb[1:2]  | failed | 0.00018 seconds |
-./spec/search/linear_search.rb[1:1]  | passed | 0.0006 seconds  |
+./spec/search/linear_search.rb[1:1]  | passed | 0.00037 seconds |
 ./spec/search/linear_search.rb[1:2]  | passed | 0.00007 seconds |
+./spec/sort/bubble_sort.rb[1:1]      | passed | 0.00034 seconds |
+./spec/sort/bubble_sort.rb[1:2]      | passed | 0.00009 seconds |

@@ -1,31 +1,17 @@
-class BubbleSort
-        
-    def bubble_sort arr
+require './lib/sort/bubble_sort'
 
-        for item in arr do
-            for item2 in arr do
-                i = arr.find_index(item2)
-                j = arr.find_index(item2) + 1
+RSpec.describe Asort::BubbleSort do
+    it "array sorted" do
+        arr = [5, 1, 4, 2, 8]
+        bubble_sort = Asort::BubbleSort.new.bubble_sort arr
 
-                unless j === arr.length
-                    if arr[i] > arr[j]
-                        aux = arr[i]
-                        arr[i] = arr[j]
-                        arr[j] = aux
-                    end
-                end
-            end
-        end
-
-        return arr
+        expect(bubble_sort).to eql [1,2,4,5,8]
     end
-end
 
-class Main
-    arr = [5, 1, 4, 2, 8]
-    
-    bubble_sort = BubbleSort.new
-    sorted_array = bubble_sort.bubble_sort arr
-    
-    puts "Sorted array: #{sorted_array}"
+    it "negative array sorted" do
+        arr = [-1, -3]
+        bubble_sort = Asort::BubbleSort.new.bubble_sort arr
+
+        expect(bubble_sort).to eql [-3,-1]
+    end
 end
