@@ -1,28 +1,28 @@
-example_id                              | status | run_time        |
---------------------------------------- | ------ | --------------- |
-./spec/algorithms_gem_spec.rb[1:1]      | passed | 0.00052 seconds |
-./spec/array/find_maximum.rb[1:1]       | passed | 0.00506 seconds |
-./spec/array/find_three.rb[1:1]         | passed | 0.00041 seconds |
-./spec/array/maximize_array.rb[1:1]     | passed | 0.0006 seconds  |
-./spec/array/minimum_product.rb[1:1]    | passed | 0.00037 seconds |
-./spec/array/minimum_sum.rb[1:1]        | passed | 0.00031 seconds |
-./spec/array/reversal.rb[1:1]           | passed | 0.00039 seconds |
-./spec/date/calculate_age.rb[1:1]       | passed | 0.00037 seconds |
-./spec/date/calculate_age.rb[1:2]       | passed | 0.00008 seconds |
-./spec/date/calculate_age.rb[1:3]       | passed | 0.00007 seconds |
-./spec/date/find_future.rb[1:1]         | passed | 0.00033 seconds |
-./spec/date/find_future.rb[1:2]         | passed | 0.00007 seconds |
-./spec/search/binary_search.rb[1:1]     | failed | 0.0408 seconds  |
-./spec/search/binary_search.rb[1:2]     | failed | 0.00018 seconds |
-./spec/search/linear_search.rb[1:1]     | passed | 0.00037 seconds |
-./spec/search/linear_search.rb[1:2]     | passed | 0.00007 seconds |
-./spec/sort/bubble_sort.rb[1:1]         | passed | 0.00034 seconds |
-./spec/sort/bubble_sort.rb[1:2]         | passed | 0.00009 seconds |
-./spec/sort/counting_sort.rb[1:1]       | passed | 0.00535 seconds |
-./spec/sort/counting_sort.rb[1:2]       | passed | 0.00011 seconds |
-./spec/string/count.rb[1:1]             | passed | 0.00037 seconds |
-./spec/string/count.rb[1:2]             | passed | 0.00007 seconds |
-./spec/string/count.rb[1:3]             | passed | 0.00007 seconds |
-./spec/string/count.rb[1:4]             | passed | 0.00006 seconds |
-./spec/string/missing_character.rb[1:1] | passed | 0.00038 seconds |
-./spec/string/missing_character.rb[1:2] | passed | 0.0001 seconds  |
+example_id                                       | status | run_time        |
+------------------------------------------------ | ------ | --------------- |
+./spec/algorithms_gem_spec.rb[1:1]               | passed | 0.0049 seconds  |
+./spec/lib/array/find_maximum_spec.rb[1:1]       | passed | 0.00483 seconds |
+./spec/lib/array/find_three_spec.rb[1:1]         | passed | 0.00054 seconds |
+./spec/lib/array/maximize_array_spec.rb[1:1]     | passed | 0.00184 seconds |
+./spec/lib/array/minimum_product_spec.rb[1:1]    | passed | 0.00026 seconds |
+./spec/lib/array/minimum_sum_spec.rb[1:1]        | passed | 0.00025 seconds |
+./spec/lib/array/reversal_spec.rb[1:1]           | passed | 0.00006 seconds |
+./spec/lib/date/calculate_age_spec.rb[1:1]       | passed | 0.00024 seconds |
+./spec/lib/date/calculate_age_spec.rb[1:2]       | passed | 0.00005 seconds |
+./spec/lib/date/calculate_age_spec.rb[1:3]       | failed | 0.03139 seconds |
+./spec/lib/date/find_future_spec.rb[1:1]         | passed | 0.00034 seconds |
+./spec/lib/date/find_future_spec.rb[1:2]         | passed | 0.00006 seconds |
+./spec/lib/search/binary_search_spec.rb[1:1]     | passed | 0.00006 seconds |
+./spec/lib/search/binary_search_spec.rb[1:2]     | passed | 0.00006 seconds |
+./spec/lib/search/linear_search_spec.rb[1:1]     | passed | 0.00006 seconds |
+./spec/lib/search/linear_search_spec.rb[1:2]     | passed | 0.00007 seconds |
+./spec/lib/sort/bubble_sort_spec.rb[1:1]         | passed | 0.00007 seconds |
+./spec/lib/sort/bubble_sort_spec.rb[1:2]         | passed | 0.00006 seconds |
+./spec/lib/sort/counting_sort_spec.rb[1:1]       | passed | 0.00017 seconds |
+./spec/lib/sort/counting_sort_spec.rb[1:2]       | passed | 0.00016 seconds |
+./spec/lib/string/count_spec.rb[1:1]             | passed | 0.00005 seconds |
+./spec/lib/string/count_spec.rb[1:2]             | passed | 0.00005 seconds |
+./spec/lib/string/count_spec.rb[1:3]             | passed | 0.00005 seconds |
+./spec/lib/string/count_spec.rb[1:4]             | passed | 0.00005 seconds |
+./spec/lib/string/missing_character_spec.rb[1:1] | passed | 0.00007 seconds |
+./spec/lib/string/missing_character_spec.rb[1:2] | passed | 0.00007 seconds |

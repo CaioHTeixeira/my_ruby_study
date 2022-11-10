@@ -4,7 +4,7 @@ module Asort
         def counting_sort arr
             sorted_array = []
             count_array = Array.new(10, 0)
-            p count_array
+
             for item in arr do
                 count_array[item] += 1
             end
