@@ -13,7 +13,7 @@ RSpec.describe Asearch::JumpSearch do
     it "item not found" do
         value = 611
         jump_search = Asearch::JumpSearch.new.jump_search arr, value
-
+        
         expect(jump_search).to eql -1
     end
 end

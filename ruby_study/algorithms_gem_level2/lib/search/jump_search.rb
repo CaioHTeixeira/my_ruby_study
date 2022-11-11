@@ -3,10 +3,7 @@ module Asearch
     class JumpSearch
         def jump_search arr, value
             step = Math.sqrt(arr.length).floor
-            index_found = -1
-            arr_step_div = arr.length.div(step)
             previous_step = 0
-            item = 1
 
             while arr[[step, arr.length].min - 1] < value do
                 previous_step = step
