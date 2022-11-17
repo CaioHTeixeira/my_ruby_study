@@ -21,11 +21,14 @@ module Asort
             #Merge the temp arrays 
     
             # Initial indexes of first and second subarrays
-            i = 0, j = 0
+            i = 0 
+            j = 0
     
             #Initial index of merged subarray array
             k = left
+
             while ((i < n1) && (j < n2)) do
+                
                 if left_arr[i] <= right_arr[j]
                     arr[k] = left_arr[i]
                     i += 1
