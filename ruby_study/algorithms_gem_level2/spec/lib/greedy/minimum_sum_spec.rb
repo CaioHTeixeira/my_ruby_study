@@ -1,4 +1,4 @@
-describe './lib/greedy/minimum_sum'
+require './lib/greedy/minimum_sum'
 
 RSpec.describe Agreedy::MinimumSum do
     it "Minimum sum with negative array numbers is correct" do
