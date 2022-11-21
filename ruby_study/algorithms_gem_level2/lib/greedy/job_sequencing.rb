@@ -4,11 +4,11 @@ module Agreedy
         attr_accessor :job, :deadline, :profit
         @@arr = []
 
-        def set_job_sequencing job, deadline, profit
-            @job = job
-            @deadline = deadline
-            @profit = profit
-            @@arr << self
+        def initialize job = nil, deadline = nil, profit = nil
+            @job = job if job != nil
+            @deadline = deadline if deadline != nil
+            @profit = profit if profit != nil
+            @@arr << self if job != nil
         end
 
         def arr_job
@@ -30,10 +30,10 @@ module Agreedy
                         job[j] = arr[i].job
                         break
                     end
-
-                    j -= 1
-                end
+                end 
             end
+
+            @@arr = []
 
             job.join
         end
