@@ -3,9 +3,9 @@ require './lib/greedy/fractional_knapsack'
 RSpec.describe Agreedy::FractionalKnapsack do
     it "test with capacity 50" do
         arr = [
-            { value: 60, weight: 10 },
-            { value: 100, weight: 20 },
-            { value: 120, weight: 30 }
+            Agreedy::FractionalKnapsack.new(60, 10),
+            Agreedy::FractionalKnapsack.new(100, 20),
+            Agreedy::FractionalKnapsack.new(120, 30)
         ]
         w = 50
 
@@ -17,7 +17,8 @@ RSpec.describe Agreedy::FractionalKnapsack do
 
     it "test with capacity 10" do
         arr = [
-            { value: 500, weight: 30 }
+            Agreedy::FractionalKnapsack.new(500, 30),
+            Agreedy::FractionalKnapsack.new(100, 20)
         ]
         w = 10
 
