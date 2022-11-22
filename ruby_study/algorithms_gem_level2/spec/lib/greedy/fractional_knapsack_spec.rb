@@ -12,7 +12,7 @@ RSpec.describe Agreedy::FractionalKnapsack do
         fractional_knapsack = Agreedy::FractionalKnapsack.new
             .fractional_knapsack arr, w
 
-        expect(fractional_knapsack).to eql 240
+        expect(fractional_knapsack).to eql 240.000
     end
 
     it "test with capacity 10" do
