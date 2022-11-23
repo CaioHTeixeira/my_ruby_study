@@ -4,8 +4,8 @@ example_id                                         | status | run_time        |
 ./spec/algorithms_gem_level2_spec.rb[1:2]          | failed | 0.04364 seconds |
 ./spec/lib/array/missing_number_spec.rb[1:1]       | passed | 0.00265 seconds |
 ./spec/lib/array/missing_number_spec.rb[1:2]       | passed | 0.00008 seconds |
-./spec/lib/greedy/fractional_knapsack_spec.rb[1:1] | passed | 0.00055 seconds |
-./spec/lib/greedy/fractional_knapsack_spec.rb[1:2] | passed | 0.00008 seconds |
+./spec/lib/greedy/fractional_knapsack_spec.rb[1:1] | passed | 0.00392 seconds |
+./spec/lib/greedy/fractional_knapsack_spec.rb[1:2] | passed | 0.00009 seconds |
 ./spec/lib/greedy/job_sequencing_spec.rb[1:1]      | failed | 0.01249 seconds |
 ./spec/lib/greedy/job_sequencing_spec.rb[1:2]      | failed | 0.0003 seconds  |
 ./spec/lib/greedy/minimum_sum_spec.rb[1:1]         | passed | 0.00196 seconds |
