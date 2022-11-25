@@ -21,9 +21,7 @@ module Agreedy
 
                 diff = current_prod - temp
 
-                if diff > higher_diff
-                    higher_diff = diff
-                end
+                higher_diff = diff if diff > higher_diff
             end
 
             output - higher_diff
