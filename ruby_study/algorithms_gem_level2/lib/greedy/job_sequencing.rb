@@ -18,11 +18,11 @@ module Agreedy
         def job_sequencing arr
             t = 3
             result = Array.new t, false
-            job = Array.new t
+            job = Array.new t, '-1'
             arr.sort_by! { |item| item.profit }.reverse!
 
             for i in 0..arr.length - 1 do
-                last_slot = [t - 1, arr[i].deadline - 1].min
+                last_slot = [t, arr[i].deadline].min - 1
 
                 for j in last_slot..0 do
                     if result[j] == false
@@ -35,7 +35,7 @@ module Agreedy
 
             @@arr = []
 
-            job.join
+            job.join(', ')
         end
     end
 end
