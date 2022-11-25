@@ -24,7 +24,6 @@ module Agreedy
                 if diff > higher_diff
                     higher_diff = diff
                 end
-                
             end
 
             output - higher_diff
