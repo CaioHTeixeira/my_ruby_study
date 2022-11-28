@@ -9,4 +9,12 @@ RSpec.describe Pstring::CommonCharacters do
 
         expect(output).to eql "e, g, k, s"
     end
+
+    it "Common Characters passed" do
+        input = [ "apple", "orange" ]
+
+        output = Pstring::CommonCharacters.new.common_characters input
+
+        expect(output).to eql "a, e"
+    end
 end
