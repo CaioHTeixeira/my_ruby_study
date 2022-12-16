@@ -20,3 +20,4 @@ example_id                                         | status | run_time        |
 ./spec/lib/sort/merge_sort_spec.rb[1:1]            | passed | 0.00199 seconds |
 ./spec/lib/sort/quick_sort_spec.rb[1:1]            | passed | 0.00045 seconds |
 ./spec/lib/sort/select_sort_spec.rb[1:1]           | passed | 0.00036 seconds |
+./spec/lib/string/group_words_spec.rb[1:1]         | passed | 0.00012 seconds |
