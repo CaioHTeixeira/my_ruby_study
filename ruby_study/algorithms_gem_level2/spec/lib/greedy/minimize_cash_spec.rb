@@ -2,19 +2,15 @@ require './lib/greedy/minimize_cash'
 
 RSpec.describe Agreedy::MinimizeCash do
     it "minimized cash flow" do
-        p1 = Agreedy::Account.new "conta_pessoa1"
-        p2 = Agreedy::Account.new "conta_pessoa2"
-        p3 = Agreedy::Account.new "conta_pessoa3"
+        graph = [ [0, 1000, 2000],
+                  [0, 0, 5000],
+                  [0, 0, 0]]
 
-        p1.deposit p1, 10000.0
-        p2.deposit p2, 10000.0
-        p3.deposit p3, 10000.0
-        p p1, p2, p3
+        output = Agreedy::MinimizeCash.new.minimize_cash graph
+        
+        output = output.join(',')
 
-        net_definition = {
-            p1: 
-        }
-        minimize_cash = Agreedy::MinimizeCash.new
-        minimize_cash.create_net_amount 
+        expect(output)
+            .to eql " Person 1 pays 4000 to Person 2, Person 0 pays 3000 to Person 2"
     end
 end
