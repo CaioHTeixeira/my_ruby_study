@@ -7,7 +7,7 @@ module Pstring
             output_values = Array.new
 
             for i in array_letters do
-                asc_value_letter = i.ord
+                asc_value_letter = i.ord - 97
                 for j in 1..arr.length-1 do
                     if arr[j].include? i
                         if boolean_array_output[asc_value_letter] == true || 
@@ -21,7 +21,7 @@ module Pstring
             end
 
             boolean_array_output.each_with_index do |item, index|
-                output_values << index.chr if item == true
+                output_values << (index + 97).chr if item == true
             end
 
             output_values.join(', ')
