@@ -29,7 +29,7 @@ module Pstring
             end
             
             output = group_words_array.join(", ").delete(" ")
-            
+
             output
         end
     end
