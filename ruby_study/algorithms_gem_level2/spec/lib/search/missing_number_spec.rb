@@ -1,4 +1,4 @@
-require './lib/array/missing_number'
+require './lib/search/missing_number'
 
 RSpec.describe Aarray::MissingNumber do 
     it "Missing number is correct!" do
