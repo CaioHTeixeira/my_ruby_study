@@ -1,27 +1,29 @@
-example_id                                         | status | run_time        |
--------------------------------------------------- | ------ | --------------- |
-./spec/algorithms_gem_level2_spec.rb[1:1]          | passed | 0.00715 seconds |
-./spec/algorithms_gem_level2_spec.rb[1:2]          | failed | 0.04364 seconds |
-./spec/lib/array/reorder_index_spec.rb[1:1]        | passed | 0.00204 seconds |
-./spec/lib/array/reorder_index_spec.rb[1:2]        | passed | 0.00041 seconds |
-./spec/lib/greedy/fractional_knapsack_spec.rb[1:1] | passed | 0.00392 seconds |
-./spec/lib/greedy/fractional_knapsack_spec.rb[1:2] | passed | 0.00009 seconds |
-./spec/lib/greedy/job_sequencing_spec.rb[1:1]      | failed | 0.0123 seconds  |
-./spec/lib/greedy/job_sequencing_spec.rb[1:2]      | failed | 0.00022 seconds |
-./spec/lib/greedy/minimize_cash_spec.rb[1:1]       | passed | 0.00045 seconds |
-./spec/lib/greedy/minimum_sum_spec.rb[1:1]         | passed | 0.00166 seconds |
-./spec/lib/greedy/minimum_sum_spec.rb[1:2]         | passed | 0.00008 seconds |
-./spec/lib/greedy/paper_cut_spec.rb[1:1]           | passed | 0.00173 seconds |
-./spec/lib/greedy/paper_cut_spec.rb[1:2]           | passed | 0.00008 seconds |
-./spec/lib/search/fibonacci_search_spec.rb[1:1]    | passed | 0.00035 seconds |
-./spec/lib/search/fibonacci_search_spec.rb[1:2]    | passed | 0.00006 seconds |
-./spec/lib/search/jump_search_spec.rb[1:1]         | passed | 0.00011 seconds |
-./spec/lib/search/jump_search_spec.rb[1:2]         | passed | 0.00006 seconds |
-./spec/lib/search/missing_number_spec.rb[1:1]      | passed | 0.00219 seconds |
-./spec/lib/search/missing_number_spec.rb[1:2]      | passed | 0.0001 seconds  |
-./spec/lib/sort/merge_sort_spec.rb[1:1]            | passed | 0.00199 seconds |
-./spec/lib/sort/quick_sort_spec.rb[1:1]            | passed | 0.00045 seconds |
-./spec/lib/sort/select_sort_spec.rb[1:1]           | passed | 0.00036 seconds |
-./spec/lib/string/common_characters_spec.rb[1:1]   | passed | 0.00184 seconds |
-./spec/lib/string/common_characters_spec.rb[1:2]   | passed | 0.00009 seconds |
-./spec/lib/string/group_words_spec.rb[1:1]         | failed | 0.04067 seconds |
+example_id                                          | status | run_time        |
+--------------------------------------------------- | ------ | --------------- |
+./spec/algorithms_gem_level2_spec.rb[1:1]           | passed | 0.00715 seconds |
+./spec/algorithms_gem_level2_spec.rb[1:2]           | failed | 0.04364 seconds |
+./spec/lib/array/positive_and_negative_spec.rb[1:1] | passed | 0.00046 seconds |
+./spec/lib/array/positive_and_negative_spec.rb[1:2] | passed | 0.00006 seconds |
+./spec/lib/array/reorder_index_spec.rb[1:1]         | passed | 0.00204 seconds |
+./spec/lib/array/reorder_index_spec.rb[1:2]         | passed | 0.00041 seconds |
+./spec/lib/greedy/fractional_knapsack_spec.rb[1:1]  | passed | 0.00392 seconds |
+./spec/lib/greedy/fractional_knapsack_spec.rb[1:2]  | passed | 0.00009 seconds |
+./spec/lib/greedy/job_sequencing_spec.rb[1:1]       | failed | 0.0123 seconds  |
+./spec/lib/greedy/job_sequencing_spec.rb[1:2]       | failed | 0.00022 seconds |
+./spec/lib/greedy/minimize_cash_spec.rb[1:1]        | passed | 0.00045 seconds |
+./spec/lib/greedy/minimum_sum_spec.rb[1:1]          | passed | 0.00166 seconds |
+./spec/lib/greedy/minimum_sum_spec.rb[1:2]          | passed | 0.00008 seconds |
+./spec/lib/greedy/paper_cut_spec.rb[1:1]            | passed | 0.00173 seconds |
+./spec/lib/greedy/paper_cut_spec.rb[1:2]            | passed | 0.00008 seconds |
+./spec/lib/search/fibonacci_search_spec.rb[1:1]     | passed | 0.00035 seconds |
+./spec/lib/search/fibonacci_search_spec.rb[1:2]     | passed | 0.00006 seconds |
+./spec/lib/search/jump_search_spec.rb[1:1]          | passed | 0.00011 seconds |
+./spec/lib/search/jump_search_spec.rb[1:2]          | passed | 0.00006 seconds |
+./spec/lib/search/missing_number_spec.rb[1:1]       | passed | 0.00219 seconds |
+./spec/lib/search/missing_number_spec.rb[1:2]       | passed | 0.0001 seconds  |
+./spec/lib/sort/merge_sort_spec.rb[1:1]             | passed | 0.00199 seconds |
+./spec/lib/sort/quick_sort_spec.rb[1:1]             | passed | 0.00045 seconds |
+./spec/lib/sort/select_sort_spec.rb[1:1]            | passed | 0.00036 seconds |
+./spec/lib/string/common_characters_spec.rb[1:1]    | passed | 0.00184 seconds |
+./spec/lib/string/common_characters_spec.rb[1:2]    | passed | 0.00009 seconds |
+./spec/lib/string/group_words_spec.rb[1:1]          | failed | 0.04067 seconds |
