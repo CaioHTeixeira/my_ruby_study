@@ -2,8 +2,8 @@ example_id                                          | status | run_time        |
 --------------------------------------------------- | ------ | --------------- |
 ./spec/algorithms_gem_level2_spec.rb[1:1]           | passed | 0.00715 seconds |
 ./spec/algorithms_gem_level2_spec.rb[1:2]           | failed | 0.04364 seconds |
-./spec/lib/array/positive_and_negative_spec.rb[1:1] | passed | 0.00042 seconds |
-./spec/lib/array/positive_and_negative_spec.rb[1:2] | passed | 0.00006 seconds |
+./spec/lib/array/positive_and_negative_spec.rb[1:1] | passed | 0.00286 seconds |
+./spec/lib/array/positive_and_negative_spec.rb[1:2] | passed | 0.00011 seconds |
 ./spec/lib/array/reorder_index_spec.rb[1:1]         | passed | 0.00204 seconds |
 ./spec/lib/array/reorder_index_spec.rb[1:2]         | passed | 0.00041 seconds |
 ./spec/lib/greedy/fractional_knapsack_spec.rb[1:1]  | passed | 0.00392 seconds |
