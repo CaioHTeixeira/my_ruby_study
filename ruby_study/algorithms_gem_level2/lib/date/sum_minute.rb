@@ -8,15 +8,17 @@ module PDate
 
             hours_in_minutes = hours_to_min(hours)
 
-            minutes_after_k_minutes = hours_in_minutes + minutes + k
+            total_time_after_k_minutes = hours_in_minutes + minutes + k
 
-            fractional_hours_after_k_minutes = minutes_to_hour(minutes_after_k_minutes)
+            fractional_hours_after_k_minutes = 
+                minutes_to_hour(total_time_after_k_minutes)
 
-            fractional_hours_parts = fractional_hours_after_k_minutes.to_s.split(".")
+            fractional_hours_parts = 
+                fractional_hours_after_k_minutes.to_s.split(".")
             final_hours = fractional_hours_parts[0].to_i
-            final_minutes = hours_to_min("0.#{fractional_hours_parts[1]}".to_f.round(2)).to_i
+            final_minutes = 
+                hours_to_min("0.#{fractional_hours_parts[1]}".to_f.round(2)).to_i
             final_minutes = "0#{final_minutes}" if final_minutes < 10
-
 
             while final_hours >= 24 do
                 final_hours -= 24

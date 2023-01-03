@@ -6,8 +6,8 @@ example_id                                          | status | run_time        |
 ./spec/lib/array/positive_and_negative_spec.rb[1:2] | passed | 0.00011 seconds |
 ./spec/lib/array/reorder_index_spec.rb[1:1]         | passed | 0.00204 seconds |
 ./spec/lib/array/reorder_index_spec.rb[1:2]         | passed | 0.00041 seconds |
-./spec/lib/date/sum_minute_spec.rb[1:1]             | passed | 0.00532 seconds |
-./spec/lib/date/sum_minute_spec.rb[1:2]             | passed | 0.00011 seconds |
+./spec/lib/date/sum_minute_spec.rb[1:1]             | passed | 0.00624 seconds |
+./spec/lib/date/sum_minute_spec.rb[1:2]             | passed | 0.0001 seconds  |
 ./spec/lib/greedy/fractional_knapsack_spec.rb[1:1]  | passed | 0.00392 seconds |
 ./spec/lib/greedy/fractional_knapsack_spec.rb[1:2]  | passed | 0.00009 seconds |
 ./spec/lib/greedy/job_sequencing_spec.rb[1:1]       | failed | 0.0123 seconds  |
