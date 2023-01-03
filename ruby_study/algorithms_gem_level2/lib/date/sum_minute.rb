@@ -15,14 +15,14 @@ module PDate
             fractional_hours_parts = fractional_hours_after_k_minutes.to_s.split(".")
             final_hours = fractional_hours_parts[0].to_i
             final_minutes = hours_to_min("0.#{fractional_hours_parts[1]}".to_f.round(2)).to_i
-            final_minutes = "0#{final_minutes}" if final_minutes.to_s.length == 1
+            final_minutes = "0#{final_minutes}" if final_minutes < 10
 
 
             while final_hours >= 24 do
                 final_hours -= 24
             end
 
-            final_hours = "0#{final_hours}" if final_hours.to_s.length < 2
+            final_hours = "0#{final_hours}" if final_hours < 10
 
             output = "#{final_hours}:#{final_minutes}" 
 
