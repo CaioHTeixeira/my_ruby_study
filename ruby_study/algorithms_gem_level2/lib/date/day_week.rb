@@ -12,7 +12,8 @@ module PDate
             year -= 1 if month < 3
             
             index_of_day = 
-                (year + year / 4 - year / 100 + year / 400 + t[month - 1] + day) % 7
+                (year + year / 4 - year / 100 + year / 400 + 
+                    t[month - 1] + day) % 7
 
             output = 
                 "#{index_of_day} i.e #{days_of_the_week[index_of_day]}"
