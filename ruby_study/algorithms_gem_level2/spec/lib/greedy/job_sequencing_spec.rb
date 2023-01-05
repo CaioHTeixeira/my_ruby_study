@@ -10,8 +10,7 @@ RSpec.describe Agreedy::JobSequencing do
         arr = Agreedy::JobSequencing.new.arr_job
         job_sequencing = Agreedy::JobSequencing.new.job_sequencing arr
 
-        expect(job_sequencing)
-            .to eql "c, a, e"
+        expect(job_sequencing).to eql "c, a, e"
     end
 
     it "Five Jobs passed" do 
@@ -24,7 +23,6 @@ RSpec.describe Agreedy::JobSequencing do
         arr = Agreedy::JobSequencing.new.arr_job
         job_sequencing = Agreedy::JobSequencing.new.job_sequencing arr
 
-        expect(job_sequencing)
-            .to eql "c, a"
+        expect(job_sequencing).to eql "c, a"
     end
 end
