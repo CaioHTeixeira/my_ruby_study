@@ -4,13 +4,13 @@ module Pstring
         def missing_character text
             output = ""
 
-            ("a".."z").each_with_index do |letter, index|
+            ("a".."z").each do |letter|
                 if !text.downcase.include?(letter) 
                     output += letter
                 end
             end
 
-            return output
+            output
         end
     end
 end
