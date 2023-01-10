@@ -5,10 +5,10 @@ module Asearch
         def linear_search(arr, value)
             found_item = false
             
-            arr.each do |item|
+            arr.each_with_index do |item, index|
                 if item === value
                     found_item = true
-                    return arr.find_index(item)
+                    return index
                 end
             end
             
