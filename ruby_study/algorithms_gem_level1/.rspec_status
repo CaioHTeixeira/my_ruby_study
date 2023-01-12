@@ -16,8 +16,8 @@ example_id                                       | status | run_time        |
 ./spec/lib/search/binary_search_spec.rb[1:2]     | passed | 0.00006 seconds |
 ./spec/lib/search/linear_search_spec.rb[1:1]     | passed | 0.00045 seconds |
 ./spec/lib/search/linear_search_spec.rb[1:2]     | passed | 0.00007 seconds |
-./spec/lib/sort/bubble_sort_spec.rb[1:1]         | passed | 0.00007 seconds |
-./spec/lib/sort/bubble_sort_spec.rb[1:2]         | passed | 0.00006 seconds |
+./spec/lib/sort/bubble_sort_spec.rb[1:1]         | passed | 0.00052 seconds |
+./spec/lib/sort/bubble_sort_spec.rb[1:2]         | passed | 0.0001 seconds  |
 ./spec/lib/sort/counting_sort_spec.rb[1:1]       | passed | 0.00017 seconds |
 ./spec/lib/sort/counting_sort_spec.rb[1:2]       | passed | 0.00016 seconds |
 ./spec/lib/string/count_spec.rb[1:1]             | passed | 0.00005 seconds |
