@@ -23,7 +23,7 @@ module Asort
                 arr[item] = sorted_array[item] 
             end
             
-            return arr
+            arr
         end
     end
 end
