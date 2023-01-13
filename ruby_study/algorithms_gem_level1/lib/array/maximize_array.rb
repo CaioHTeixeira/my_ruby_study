@@ -12,7 +12,7 @@ module Aarray
                 arr[index_minimum_item] *= -1
             end
 
-            return arr.sum
+            arr.sum
         end
     end
 end
