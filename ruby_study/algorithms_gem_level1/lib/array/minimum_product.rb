@@ -1,6 +1,5 @@
 #A = Algorithm 
 module Aarray
-
     class MinimumProduct
         def minimum_product arr
             negative_itens = []
@@ -28,7 +27,7 @@ module Aarray
                 minimum_product *= item
             end
 
-            return minimum_product
+            minimum_product
         end
     end
 end
