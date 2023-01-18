@@ -13,11 +13,11 @@ module Aarray
                         i += 1
                     end
                 else
-                    new_arr[index+k] = item
+                    new_arr[index + k] = item
                 end
             end
 
-            return new_arr
+            new_arr
         end
     end
 end
