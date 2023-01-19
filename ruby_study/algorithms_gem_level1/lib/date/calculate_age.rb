@@ -33,7 +33,7 @@ module Pdate
             age[:month] = month
             age[:day] = day
 
-            return age
+            age
         end
     end
 end
