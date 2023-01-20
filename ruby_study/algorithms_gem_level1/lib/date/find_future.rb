@@ -23,7 +23,7 @@ module Pdate
                 dates_after = []
             end        
             
-            return result
+            result
         end
     end
 end
