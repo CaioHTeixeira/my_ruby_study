@@ -17,7 +17,7 @@ module Asearch
                 return binary_search(array, left, mid-1, value)
             end
 
-            return -1
+            -1
         end
     end
 end
