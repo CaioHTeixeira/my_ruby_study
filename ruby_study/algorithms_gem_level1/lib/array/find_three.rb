@@ -21,7 +21,7 @@ module Aarray
 
             three_max.push first, second, third
             
-            return three_max.sort.reverse
+            three_max
         end
     end
 end
