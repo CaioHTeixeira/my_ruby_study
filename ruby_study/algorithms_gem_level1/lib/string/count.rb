@@ -26,7 +26,7 @@ module Pstring
             output[:special_characters_amount] = special_characters_amount
             output[:numeric_values_amount] = numeric_values_amount
 
-            return output
+            output
         end
     end
 end
