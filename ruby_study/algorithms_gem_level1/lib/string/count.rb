@@ -10,11 +10,13 @@ module Pstring
             input_array = input.chomp.split('')
             
             input_array.each do |item|
-                if ("a".."z").to_a.include? item                
+                item_in_ascii = item.ord
+
+                if item_in_ascii >= 97 && item_in_ascii <= 122                
                     lowercase_amount += 1
-                elsif ("A".."Z").to_a.include? item 
+                elsif item_in_ascii >= 65 && item_in_ascii <= 90 
                     uppercase_amount += 1
-                elsif ("0".."9").to_a.include? item 
+                elsif item_in_ascii >= 48 && item_in_ascii <= 57 
                     numeric_values_amount += 1
                 else
                     special_characters_amount += 1
