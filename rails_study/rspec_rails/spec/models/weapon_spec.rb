@@ -23,7 +23,6 @@ RSpec.describe Weapon, type: :model do
         weapon = Weapon.create(name: name, level: level, 
             power_base: power_base, power_step: power_step, 
             description: description)
-            p weapon
 
         expect(weapon.title).to eq("#{name} ##{level}")   
     end
